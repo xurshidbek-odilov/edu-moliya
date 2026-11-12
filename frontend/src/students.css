@@ -1,0 +1,54 @@
+.student-filters {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+}
+.student-filters label {
+  display: grid;
+  gap: 6px;
+  min-width: 220px;
+  color: #475467;
+  font-size: 13px;
+  font-weight: 700;
+}
+.student-filters > span {
+  margin-left: auto;
+  padding: 11px 0;
+  color: #667085;
+  font-size: 14px;
+}
+.student-balance {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 99px;
+  font-weight: 750;
+}
+.student-balance.debt {
+  color: #b42318;
+  background: #fef3f2;
+}
+.student-balance.credit {
+  color: #027a48;
+  background: #ecfdf3;
+}
+.student-balance.zero {
+  color: #475467;
+  background: #f2f4f7;
+}
+@media (max-width: 650px) {
+  .student-filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .student-filters label {
+    min-width: 0;
+  }
+  .student-filters > span {
+    margin-left: 0;
+  }
+}

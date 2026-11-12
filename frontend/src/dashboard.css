@@ -1,0 +1,197 @@
+.dash h2 {
+  font-size: 18px;
+  margin: 26px 0 14px;
+}
+.dash-controls {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+.dash-controls label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: #475467;
+}
+.dash-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 32px;
+  padding: 18px 22px;
+  background: #101828;
+  color: #cbd5e1;
+  border-radius: 14px;
+}
+.dash-counts b {
+  margin-left: 12px;
+  color: white;
+  font-size: 22px;
+}
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.dash-metric {
+  background: white;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+.dash-metric span {
+  font-size: 14px;
+  color: #475467;
+}
+.dash-metric strong {
+  font-size: clamp(18px, 1.8vw, 27px);
+  overflow-wrap: anywhere;
+}
+.dash-metric small {
+  color: #667085;
+}
+.dash-metric.positive strong {
+  color: #027a48;
+}
+.dash-metric.negative strong {
+  color: #b42318;
+}
+.dash-columns {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 18px;
+  margin: 20px 0;
+}
+.dash-panel {
+  min-width: 0;
+  background: white;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  padding: 22px;
+}
+.dash-panel h2 {
+  margin: 0 0 16px;
+}
+.dash-panel p,
+.dash-hint {
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.dash-lesson-count {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 28px 0 16px;
+}
+.dash-lesson-count strong {
+  font-size: 42px;
+}
+.dash-panel progress {
+  width: 100%;
+  height: 12px;
+  accent-color: #2563eb;
+}
+.dash-empty {
+  padding: 26px 8px;
+  text-align: center;
+  color: #667085;
+}
+.dash-chart {
+  display: flex;
+  gap: 4px;
+  height: 190px;
+  overflow-x: auto;
+}
+.dash-day {
+  flex: 1;
+  min-width: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+.dash-bars {
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  height: 160px;
+  border-bottom: 1px solid #eaecf0;
+}
+.dash-bars i {
+  flex: 1;
+  background: #12b76a;
+  border-radius: 3px 3px 0 0;
+}
+.dash-bars i + i {
+  background: #f79009;
+}
+.dash-day small {
+  font-size: 10px;
+  color: #667085;
+}
+.dash-legend {
+  display: flex;
+  gap: 20px;
+}
+.dash-legend span:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: #12b76a;
+  margin-right: 6px;
+}
+.dash-legend span + span:before {
+  background: #f79009;
+}
+.dash-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dash-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaecf0;
+}
+.dash-list li:last-child {
+  border: 0;
+}
+.dash-list small {
+  display: block;
+  color: #667085;
+  margin-top: 5px;
+}
+.dash-hint {
+  margin: 8px 0 16px;
+}
+@media (max-width: 1200px) {
+  .dash-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 800px) {
+  .dash-columns {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .dash-grid {
+    grid-template-columns: 1fr;
+  }
+  .dash-controls {
+    width: 100%;
+  }
+  .dash-controls label {
+    flex: 1;
+  }
+  .dash-panel {
+    padding: 16px;
+  }
+}

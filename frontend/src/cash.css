@@ -1,0 +1,101 @@
+.cash-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.cash-stats .stat strong {
+  font-size: 26px;
+}
+.cash-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 6px;
+  background: #e9eef6;
+  border-radius: 12px;
+}
+.cash-tabs button {
+  flex: 1;
+  background: transparent;
+  color: #475467;
+}
+.cash-tabs button.active {
+  color: #fff;
+  background: #2563eb;
+}
+.cash-form {
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+  margin-bottom: 34px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+}
+.cash-form label {
+  display: grid;
+  gap: 7px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cash-form textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  padding: 11px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  font: inherit;
+}
+.cash-form > button {
+  justify-self: start;
+  min-width: 130px;
+}
+.balance-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px;
+  color: #027a48;
+  background: #ecfdf3;
+  border-radius: 10px;
+}
+.balance-box span {
+  font-size: 13px;
+}
+.balance-box b {
+  font-size: 20px;
+}
+.balance-box.negative {
+  color: #b42318;
+  background: #fef3f2;
+}
+.section-title {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+.editing-notice {
+  max-width: 720px;
+  margin-bottom: 10px;
+  padding: 11px 14px;
+  color: #175cd3;
+  background: #eff8ff;
+  border-radius: 9px;
+  font-weight: 700;
+}
+@media (max-width: 650px) {
+  .cash-stats {
+    grid-template-columns: 1fr;
+  }
+  .cash-tabs {
+    flex-direction: column;
+  }
+  .balance-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,89 @@
+.report-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+}
+.report-filters label {
+  display: grid;
+  gap: 6px;
+  color: #475467;
+  font-size: 13px;
+  font-weight: 700;
+}
+.report-filters button {
+  align-self: end;
+}
+.report-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px;
+  overflow-x: auto;
+  background: #e9eef6;
+  border-radius: 12px;
+}
+.report-tabs button {
+  flex: 1;
+  min-width: 145px;
+  color: #475467;
+  background: transparent;
+}
+.report-tabs button.active {
+  color: #fff;
+  background: #2563eb;
+}
+.report-card {
+  max-width: 760px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+}
+.report-card h2 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+.report-card > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 0;
+  border-bottom: 1px solid #eaecf0;
+}
+.report-card > div:last-child {
+  border-bottom: 0;
+}
+.report-total {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 800;
+}
+.negative-value {
+  color: #b42318;
+}
+.balance-report {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.balance-report .report-card {
+  max-width: none;
+}
+@media (max-width: 1000px) {
+  .report-filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .balance-report {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .report-filters {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.expense-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.edit {
+  padding: 7px 11px;
+  background: #eff8ff;
+  color: #175cd3;
+}
+.cancel {
+  background: #fff;
+  color: #344054;
+  border: 1px solid #d0d5dd;
+}
+.row-actions {
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 900px) {
+  .expense-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .expense-form {
+    grid-template-columns: 1fr;
+  }
+}

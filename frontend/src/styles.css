@@ -1,0 +1,304 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #172033;
+  background: #f5f7fb;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 11px 16px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+input,
+select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  background: #fff;
+  outline: none;
+}
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #2563eb18;
+}
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f3f6fb;
+}
+.login-card {
+  width: min(100%, 420px);
+  display: grid;
+  gap: 18px;
+  padding: 38px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 18px 60px #25446c1c;
+}
+.login-card label,
+.group-form > label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login-card h1,
+.login-card p {
+  margin: 0;
+}
+.login-card p {
+  color: #667085;
+}
+.eyebrow {
+  color: #2563eb;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.error {
+  padding: 11px 13px;
+  border-radius: 9px;
+  color: #b42318;
+  background: #fef3f2;
+  margin-bottom: 14px;
+}
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 24px 16px;
+  background: #101828;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  font-size: 22px;
+  font-weight: 850;
+  padding: 6px 10px 28px;
+}
+.brand span {
+  display: block;
+  color: #98a2b3;
+  font-size: 12px;
+  margin-top: 4px;
+}
+nav {
+  display: grid;
+  gap: 7px;
+}
+nav button,
+.logout {
+  text-align: left;
+  background: transparent;
+  color: #cbd5e1;
+}
+nav button:hover,
+nav button.active {
+  background: #ffffff16;
+  color: #fff;
+}
+.logout {
+  margin-top: auto;
+  color: #fda29b;
+}
+.content {
+  padding: 38px;
+  min-width: 0;
+}
+.page-title {
+  margin-bottom: 24px;
+}
+.page-title h1 {
+  margin: 0 0 7px;
+  font-size: 28px;
+}
+.page-title p {
+  margin: 0;
+  color: #667085;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.stat,
+.group-form,
+.group-card,
+.table-wrap {
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #10182808;
+}
+.stat {
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+}
+.stat span {
+  color: #667085;
+}
+.stat strong {
+  font-size: 34px;
+}
+.entry-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.group-form {
+  padding: 22px;
+  display: grid;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.checks label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+.checks input {
+  width: auto;
+}
+.group-form select[multiple] {
+  min-height: 110px;
+}
+.group-form > button {
+  justify-self: start;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eaecf0;
+  text-align: left;
+  white-space: nowrap;
+}
+th {
+  background: #f9fafb;
+  color: #475467;
+  font-size: 13px;
+}
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+.danger {
+  padding: 7px 10px;
+  background: #fef3f2;
+  color: #b42318;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.group-card {
+  padding: 20px;
+}
+.group-card h3 {
+  margin: 0 0 4px;
+}
+.group-card span,
+.group-card p {
+  color: #667085;
+}
+.group-card b {
+  color: #344054;
+}
+.badge {
+  border-radius: 99px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.operating {
+  background: #ecfdf3;
+  color: #027a48;
+}
+.investing {
+  background: #eff8ff;
+  color: #175cd3;
+}
+.financing {
+  background: #f4f3ff;
+  color: #5925dc;
+}
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    position: static;
+    height: auto;
+  }
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logout {
+    margin-top: 15px;
+  }
+  .content {
+    padding: 22px 15px;
+  }
+  .stats,
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .entry-form,
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .stats,
+  .cards,
+  .entry-form,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
